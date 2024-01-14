@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="side-nav">
+            <div class="user">
+                <img src="user.png" class="user-img">
+                <div>
+                    <h2>Demo User</h2>
+                    <p>user@xyz.com</p>
+                </div>
+                <img src="star.png" class="star-img">
+            </div>
+            <ul>
+                <!-- Update the onclick events to load the respective Streamlit apps -->
+                <li><a href="http://localhost:8501/?page=Diabetes%20Prediction" target="_blank"><img src="members.png"><p>Diabetes Prediction</p></a></li>
+                <li><a href="http://localhost:8501/?page=Heart%20Disease%20Prediction" target="_blank"><img src="members.png"><p>Heart Disease Prediction</p></a></li>
+                <li><a href="http://localhost:8501/?page=Parkinson's%20Prediction" target="_blank"><img src="members.png"><p>Parkinson's Prediction</p></a></li>
+            </ul>
+            <ul>
+                <li><img src="logout.png" alt=""><p>Logout</p></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Streamlit content will be loaded here -->
+    <div id="streamlitContainer"></div>
+
+    <script>
+        // You may keep this script if you plan to load Streamlit apps dynamically using JavaScript
+    </script>
+</body>
+
+</html>
